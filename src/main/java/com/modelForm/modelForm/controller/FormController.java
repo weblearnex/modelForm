@@ -13,7 +13,7 @@ import com.modelForm.modelForm.beans.User;
 public class FormController {
 	
 	
-	//@PostMapping("/saveController")
+	
 	@RequestMapping(value="/saveController",method = RequestMethod.POST)
 	public @ResponseBody User save(@RequestBody User user){
 		System.out.println(user.getId());
