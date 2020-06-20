@@ -15,6 +15,11 @@ public class ApiController {
 		return "application up and running";
 	}
 	
+	@GetMapping("/get")
+	public String get(){
+		return "application up and running get";
+	}
+	
 	@PostMapping("/save")
 	public User save(@RequestBody User user){
 		
